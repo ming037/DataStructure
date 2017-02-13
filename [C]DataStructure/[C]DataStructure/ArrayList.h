@@ -1,5 +1,5 @@
 #pragma once
-#pragma once
+#include "commonListDef.h"
 //List 정리1 - Array List(배열 리스트)
 #ifndef _ARRAYLIST_
 #define _ARRAYLIST_
@@ -24,12 +24,4 @@ ArrayListNode* getALElement(ArrayList* pList, int pos);
 void displayArrayList(ArrayList* pList);
 void clearArrayList(ArrayList* pList);
 int getArrayListLength(ArrayList* pList);
-#endif
-
-#ifndef _COMMON_LIST_DEF
-#define _COMMON_LIST_DEF
-
-#define TRUE 1
-#define FALSE 0
-
 #endif

@@ -1,22 +1,44 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "arraylist.h"
+#include "LinkedList.h"
 int main()
 {
 	//testcase for ArrayList
-	ArrayList *pList = NULL;
-	ArrayListNode *pValue = NULL;
-
-	pList = createArrayList(6);
-	if (pList != NULL)
+	/*
+	ArrayList *pArrayList = NULL;
+	pArrayList = createArrayList(6);
+	
+	if (pArrayList != NULL)
 	{
 		ArrayListNode node;
 		for (int i = 0; i < 5; i++)
 		{
 			node.data = i;
-			addALElement(pList, i, node);
+			addALElement(pArrayList, i, node);
 		}
-		displayArrayList(pList);
+		displayArrayList(pArrayList);
+		removeALElement(pLinkedList, 3);
+		displayArrayList(pArrayList);
 	}
+	*/
+
+	//testcase for LinkedList
+	LinkedList *pLinkedList = NULL;
+	pLinkedList = createLinkedList();
+	if (pLinkedList != NULL)
+	{
+		ListNode node;
+		for (int i = 0; i < 5; i++)
+		{
+			node.data = i;
+			addLLElement(pLinkedList, i, node);
+		}
+		displayLinkedList(pLinkedList);
+		removeLLElement(pLinkedList, 3);
+		displayLinkedList(pLinkedList);
+	}
+	
+
 	system("pause");
 }
