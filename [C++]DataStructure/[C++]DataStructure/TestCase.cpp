@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "ArrayList.h"
 #include "LinkedList.h"
+#include "ArrayStack.h"
 using namespace std;
 
 int main()
@@ -32,6 +33,7 @@ int main()
 	}
 	*/
 
+	/*
 	//testcase for LinkedList
 	try
 	{
@@ -50,6 +52,30 @@ int main()
 
 		a.displayLinkedList();
 		a.removeLLElement(1);
+	}
+	catch (char* e)
+	{
+		cout << e;
+	}
+	*/
+
+	try
+	{
+		ArrayStack<int> a(3);
+		for (int i = 0; i < 3; i++)
+			a.push(i + 1);
+
+		a.displayArrayStack();
+
+		a.pop();
+		a.pop();
+
+		a.displayArrayStack();
+
+		a.pop();
+		a.displayArrayStack();
+		a.pop();
+		
 	}
 	catch (char* e)
 	{

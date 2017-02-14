@@ -132,7 +132,7 @@ void LinkedList<T>::displayLinkedList()
 	for (int i = 0; i < currentElementCnt; i++)
 	{
 		tmp = getLLElement(i);
-		printf("[%d]: %d\n", i, tmp->getData());
+		cout << "[" << i << "]: " << tmp->getData() << endl;
 	}
 }
 
