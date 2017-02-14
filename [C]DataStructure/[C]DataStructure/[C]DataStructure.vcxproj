@@ -147,6 +147,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ArrayList.c" />
+    <ClCompile Include="ArrayStack.c" />
     <ClCompile Include="LinkedList.c" />
     <ClCompile Include="TestCase.c" />
   </ItemGroup>
@@ -154,6 +155,7 @@
     <ClInclude Include="ArrayList.h" />
     <ClInclude Include="commonListDef.h" />
     <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="ArrayStack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
