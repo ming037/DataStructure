@@ -147,12 +147,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ArrayList.c" />
+    <ClCompile Include="ArrayQueue.c" />
     <ClCompile Include="ArrayStack.c" />
     <ClCompile Include="LinkedList.c" />
     <ClCompile Include="TestCase.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArrayList.h" />
+    <ClInclude Include="ArrayQueue.h" />
     <ClInclude Include="commonListDef.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="ArrayStack.h" />

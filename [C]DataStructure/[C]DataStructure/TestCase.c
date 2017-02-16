@@ -3,6 +3,7 @@
 #include "arraylist.h"
 #include "LinkedList.h"
 #include "ArrayStack.h"
+#include "ArrayQueue.h"
 int main()
 {
 	//testcase for ArrayList
@@ -42,6 +43,7 @@ int main()
 	}
 	*/
 
+	/*
 	//testcase for ArrayStack
 	ArrayStack *pArrayStack = NULL;
 	pArrayStack = createArrayStack(5);
@@ -56,6 +58,21 @@ int main()
 		displayArrayStack(pArrayStack);
 		pop(pArrayStack);
 		displayArrayStack(pArrayStack);
+	}
+	*/
+	ArrayQueue *pArrayQueue = NULL;
+	pArrayQueue = createArrayQueue(5);
+	if (pArrayQueue != NULL)
+	{
+		ArrayQueueNode node;
+		for (int i = 0; i < 5; i++)
+		{
+			node.data = i + 65;
+			enqueueAQ(pArrayQueue, node);
+		}
+		displayArrayQueue(pArrayQueue);
+		dequeueAQ(pArrayQueue);
+		displayArrayQueue(pArrayQueue);
 	}
 	system("pause");
 }
