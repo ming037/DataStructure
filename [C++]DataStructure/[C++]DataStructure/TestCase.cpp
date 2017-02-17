@@ -3,6 +3,7 @@
 #include "ArrayList.h"
 #include "LinkedList.h"
 #include "ArrayStack.h"
+#include "ArrayQueue.h"
 using namespace std;
 
 int main()
@@ -59,6 +60,8 @@ int main()
 	}
 	*/
 
+	/*
+	//testcase for ArrayStack
 	try
 	{
 		ArrayStack<int> a(3);
@@ -76,6 +79,31 @@ int main()
 		a.displayArrayStack();
 		a.pop();
 		
+	}
+	catch (char* e)
+	{
+		cout << e;
+	}
+	*/
+
+	//testcase for ArrayQueue
+	try
+	{
+		ArrayQueue<int> a(3);
+		for (int i = 0; i < 3; i++)
+			a.enqueueAQ(i + 1);
+
+		a.displayArrayQueue();
+
+		a.dequeueAQ();
+		a.dequeueAQ();
+
+		a.displayArrayQueue();
+
+		a.dequeueAQ();
+		a.displayArrayQueue();
+		a.dequeueAQ();
+
 	}
 	catch (char* e)
 	{
