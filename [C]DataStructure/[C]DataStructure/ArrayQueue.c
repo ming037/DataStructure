@@ -118,7 +118,7 @@ void displayArrayQueue(ArrayQueue* pQueue)
 	{
 		printf("MAX ELEMENT COUNT = %d \n", pQueue->maxElementCnt);
 		printf("CURRENT ELEMENT COUNT = %d\n", pQueue->currentElementCnt);
-		for (int i=0; i < pQueue->currentElementCnt; i++)
-			printf("[%d]: %c\n", i, pQueue->pElement[i]);
+		for (int i= pQueue->front+1, cnt = 0; i < pQueue->rear+1; i++, cnt++)
+			printf("[%d]: %c\n", cnt, pQueue->pElement[i]);
 	}
 }
